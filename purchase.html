@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> 
+    <link rel="stylesheet" href="css/purchase_style.css"><!--Purchase Now css-->
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+    <script src="js/purchase_main.js"></script><!--Purchase JS-->
+  	
+	<title>Purchase Now</title>
+</head>
+<body>
+	<header class="cd-header">
+		<div id="cd-logo"><a href="index.html"><img src="img/tfl_logo_final.png" height="154" width="154" alt="Logo"></a></div>
+		<nav class="cd-primary-nav">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="tour.html">Tour Dates</a></li>
+				<li><a href="purchase.html">Purchase Now</a></li>
+			</ul>
+		</nav> <!-- cd-primary-nav -->
+	</header>
+	<section id="cd-intro">
+		<div id="cd-intro-tagline">
+			<h1>Purchase Now</h1>
+		</div> 
+	</section> <!-- #cd-intro -->
+
+	<div class="cd-secondary-nav">
+		<a href="#0" class="cd-secondary-nav-trigger">Menu<span></span></a> <!-- button visible on small devices -->
+		<nav>
+			<ul>
+				<li>
+					<a href="#cd-placeholder-1">
+						<b>Purchase Order</b>
+						<span></span><!-- icon -->
+					</a>
+				</li>
+			</ul>
+		</nav>
+	</div> <!-- .cd-secondary-nav -->
+	<main class="cd-main-content">
+		<section id="cd-placeholder-1" class="cd-section cd-container">
+            <form class="cd-form floating-labels">
+		<fieldset>
+			<legend>Purchase Order</legend>
+
+			<div class="error-message">
+				<p>Please enter a valid email address</p>
+			</div>
+
+			<div class="icon">
+				<label class="cd-label" for="cd-name">Name</label>
+				<input class="user" type="text" name="cd-name" id="cd-name" required>
+		    </div> 
+
+		    <div class="icon">
+		    	<label class="cd-label" for="cd-email">Email</label>
+				<input class="email error" type="email" name="cd-email" id="cd-email" required>
+		    </div>
+		</fieldset>
+
+		<fieldset>
+			<legend>Merchandise</legend>
+
+			<div>
+				<p class="cd-select icon">
+					<select class="budget">
+						<option value="0">CD</option>
+						<option value="1">Poster</option>
+						<option value="2">Hat</option>
+						<option value="3">T-Shirt</option>
+					</select>
+				</p>
+			</div> 
+
+			<div>
+				<h4>Request Options</h4>
+
+				<ul class="cd-form-list">
+					<li>
+						<input type="radio" name="radio-button" id="cd-radio-1" checked>
+						<label for="cd-radio-1">Autographed</label>
+					</li>
+						
+					<li>
+						<input type="radio" name="radio-button" id="cd-radio-2">
+						<label for="cd-radio-2">Engraved</label>
+					</li>
+
+					<li>
+						<input type="radio" name="radio-button" id="cd-radio-3">
+						<label for="cd-radio-3">Original</label>
+					</li>
+				</ul>
+			</div>
+
+			<div>
+				<h4>Did you want that wrapped? (gift options)</h4>
+
+				<ul class="cd-form-list">
+					<li>
+						<input type="checkbox" id="cd-checkbox-1">
+						<label for="cd-checkbox-1">Yes</label>
+					</li>
+
+					<li>
+						<input type="checkbox" id="cd-checkbox-2">
+						<label for="cd-checkbox-2">No</label>
+					</li>
+
+				</ul>
+			</div>
+
+			<div>
+		      	<input type="submit" value="Complete Order">
+		    </div>
+
+		</fieldset>
+	</form>
+		</section> <!-- #cd-placeholder-1 -->
+</main>
+	
+	
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/main.js"></script> 
+</body>
+</html>
